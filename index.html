@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Lab5 bokningssystem</title>
+		<script type="text/javascript" src="lab5.js"></script>
+		<link rel="stylesheet" type="text/css" href="lab5.css" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="rightside">
+				<h3>Choose your seat</h3>
+				<p>
+					<input type="button" value="x" class="buttonfree" />
+					Free
+					<br />
+					<input type="button" value="x" class="buttontaken" />
+					Taken
+					<br />
+					<input type="button" value="x" class="buttonunavail" />
+					Unavailable for this ticket class
+				</p>
+				<br />
+				<span id="b1">
+					<input type="button" value="1" class="buttonunavail" onclick="alert('Not economy class!')" />
+				</span>
+				<span id="b2">
+					<input type="button" value="2" class="buttonunavail" onclick="alert('Not economy class!')" />
+				</span>
+				<span id="b3">
+					<input type="button" value="3" class="buttonunavail" onclick="alert('Not economy class!')" />
+				</span>
+				<br />
+				<span id="b4">
+					<input type="button" value="4" class="buttonunavail" onclick="alert('Not economy class!')" />
+				</span>
+				<span id="b5">
+					<input type="button" value="5" class="buttonunavail" onclick="alert('Not economy class!')" />
+				</span>
+				<span id="b6">
+					<input type="button" value="6" class="buttonunavail" onclick="alert('Not economy class!')" />
+				</span>
+				<br />
+				<span id="b7">
+					<input type="button" value="7" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b8">
+					<input type="button" value="8" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b9">
+					<input type="button" value="9" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<br />
+				<span id="b10">
+					<input type="button" value="10" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b11">
+					<input type="button" value="11" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b12">
+					<input type="button" value="12" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<br />
+				<span id="b13">
+					<input type="button" value="13" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b14">
+					<input type="button" value="14" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b15">
+					<input type="button" value="15" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<br />
+				<span id="b16">
+					<input type="button" value="16" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b17">
+					<input type="button" value="17" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<span id="b18">
+					<input type="button" value="18" class="buttonfree" onclick="bookSeat(value)" />
+				</span>
+				<br />
+			</div>
+			<div id="leftside">
+				<form name="details" action="">
+				<h3>Personal details</h3>
+				Business class:
+				<input type="checkbox" name="bizClass" onclick="biz(this)"/>
+					<br />
+				First Name:
+				<input type="text" name="firstName" />
+				<br />
+				Last Name:
+				<input type="text" name="lastName" />
+				<br />
+				Seat number:
+				<span id="bookedseat"></span>
+				<br />
+				<input type="button" value="Submit" onclick="printBoard(this.form)" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
