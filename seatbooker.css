@@ -1,0 +1,30 @@
+body {
+}
+.buttonfree {
+	color: black;
+	background-color: green;
+	width: 50px;
+}
+.buttontaken {
+	color: white;
+	background-color: red;
+	width: 50px;
+}
+.buttonunavail {
+	color: gray;
+	background-color: white;
+	width: 50px;
+}
+#container {
+	margin: auto;
+	width: 1024px;
+	height: 720px;
+}
+#rightside {
+	float: right;
+	width: 512px;
+}
+#leftside {
+	float: left;
+	width: 512px;
+}
